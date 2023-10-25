@@ -28,6 +28,10 @@ jobs:
     - name: get pod logs
       run:
         kubectl get pods
+    - name: sleep for 2 min
+      run:
+        sleep 120
+    
     - name: Test service URLs
       run: |
           minikube service list
