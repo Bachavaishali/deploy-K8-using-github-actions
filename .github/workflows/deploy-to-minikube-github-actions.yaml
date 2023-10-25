@@ -25,6 +25,9 @@ jobs:
     - name: get service details
       run:
         kubectl get service
+    - name: get pod logs
+      run:
+        kubectl get pods
     - name: Test service URLs
       run: |
           minikube service list
