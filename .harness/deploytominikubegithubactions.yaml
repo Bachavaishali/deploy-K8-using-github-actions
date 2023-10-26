@@ -45,9 +45,8 @@ pipeline:
           services:
             values:
               - serviceRef: deployment
-              - serviceRef: service
             metadata:
-              parallel: false
+              parallel: true
         tags: {}
         failureStrategies:
           - onFailure:
